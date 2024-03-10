@@ -31,11 +31,11 @@ public class hue2_4 {
         for (int i = 0; i < n; i++) {
             System.out.println("Wieviele Noten im "+ (i+1) +". Fach?");
             int gradenumbers=scanner.nextInt();
-            grades [i] =new int [gradenumbers];
+            grades [i] =new int [gradenumbers];              //zuweisen, wieviele Noten
             for (int j = 0; j < gradenumbers; j++) {
                 System.out.println("Welche Note im " + (j+1) +". Fach?");
                 int gradeval=scanner.nextInt();
-                grades [i][j] =gradeval;
+                grades [i][j] =gradeval;                        //zuweisen, welche Noten in welchem Fach
             }
             System.out.println("Notenschnitt für Fach " +(i+1));
             System.out.println(subjectmean(grades[i]));
